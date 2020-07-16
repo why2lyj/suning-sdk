@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+
+'''
+
+Created on 2019-11-29
+
+@author: suning
+
+'''
+
+from suning.api.abstract import AbstractApi
+
+
+
+class InstallmentactQueryRequest(AbstractApi):
+
+    '''
+
+    '''
+
+    def __init__(self):
+
+        AbstractApi.__init__(self)
+
+        self.cmmdtyCodes = None
+        
+        self.setParamRule({
+        	})
+
+    def getApiBizName(self):
+
+        return 'queryInstallmentact'
+
+    def getApiMethod(self):
+
+        return 'suning.online.installmentact.query'
+
+
+

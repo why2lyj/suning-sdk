@@ -1,0 +1,29 @@
+#!usr/bin/python
+# -*- coding: utf-8 -*-
+
+'''
+Created on 2019-8-1
+
+@author: suning
+'''
+import sys
+import os
+basepath = os.path.dirname(os.path.abspath(sys.argv[0]))+"/../../"
+sys.path.append(basepath)
+
+import suning.api as api
+
+a=api.BanktransferCreateRequest()
+
+a.setDomainInfo("openpre.cnsuning.com","80")
+a.setAppInfo("a13b8bd0efb06a770c57d1c370ce8ee7", "f08ce9836c4bcfc708194594081f6690")
+# 如果使用oauth认证方式，那么调用下面方法来添加accessToken
+#a.setAccessToken("4caf7fa30dd8")
+a.orderIds=[{"orderId":"100005246322"}]
+a.phoneNum='13225266302'
+
+try:
+    f = a.getResponse()
+    print(f)
+except Exception as e:
+    print(e)

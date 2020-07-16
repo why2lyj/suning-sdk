@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+
+'''
+
+Created on 2017-5-23
+
+@author: suning
+
+'''
+
+from suning.api.abstract import AbstractApi
+
+
+
+class InventoryAddRequest(AbstractApi):
+
+    '''
+
+    '''
+
+    def __init__(self):
+
+        AbstractApi.__init__(self)
+
+        self.inventory = None
+        
+        self.setParamRule({
+        	})
+
+    def getApiBizName(self):
+
+        return 'addInventory'
+
+    def getApiMethod(self):
+
+        return 'suning.selfmarket.inventory.add'
+
+
+

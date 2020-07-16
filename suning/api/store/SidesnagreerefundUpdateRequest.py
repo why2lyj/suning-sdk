@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+
+'''
+
+Created on 2019-3-21
+
+@author: suning
+
+'''
+
+from suning.api.abstract import AbstractApi
+
+
+
+class SidesnagreerefundUpdateRequest(AbstractApi):
+
+    '''
+
+    '''
+
+    def __init__(self):
+
+        AbstractApi.__init__(self)
+
+        self.returnQuestId = None
+        
+        self.setParamRule({
+        	'returnQuestId':{'allow_empty':False}
+        	})
+
+    def getApiBizName(self):
+
+        return 'updateSidesnagreerefund'
+
+    def getApiMethod(self):
+
+        return 'suning.store.sidesnagreerefund.update'
+
+
+

@@ -1,0 +1,28 @@
+#!usr/bin/python
+# -*- coding: utf-8 -*-
+
+'''
+Created on 2017-5-23
+
+@author: suning
+'''
+import sys
+import os
+basepath = os.path.dirname(os.path.abspath(sys.argv[0]))+"/../../"
+sys.path.append(basepath)
+
+import suning.api as api
+
+a=api.OrderdepartureAddRequest()
+
+a.setDomainInfo("openpre.cnsuning.com","80")
+a.setAppInfo("a13b8bd0efb06a770c57d1c370ce8ee7", "f08ce9836c4bcfc708194594081f6690")
+# 如果使用oauth认证方式，那么调用下面方法来添加accessToken
+#a.setAccessToken("4caf7fa30dd8")
+a.orderDepartue=[{"saleOrderItemCode":"10","arrivalTime":"2017-04-28 20:00:00","saleOrderCode":"4121022","tel":"18551664455","departureTime":"2017-04-28","departureCode":"444444","purchaseOrderNo":"111111","purchaseOrderItemNo":"10","licensePlate":"苏AR3334","departurePlace":"南京","commodityCode":"10444215","destination":"上海","departureCount":"100","contacts":"呃呃"}]
+
+try:
+    f = a.getResponse()
+    print(f)
+except Exception as e:
+    print(e)

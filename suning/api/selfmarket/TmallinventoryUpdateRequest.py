@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+
+'''
+
+Created on 2019-9-4
+
+@author: suning
+
+'''
+
+from suning.api.abstract import AbstractApi
+
+
+
+class TmallinventoryUpdateRequest(AbstractApi):
+
+    '''
+
+    '''
+
+    def __init__(self):
+
+        AbstractApi.__init__(self)
+
+        self.goodsList = None
+        self.invType = None
+        
+        self.setParamRule({
+        	})
+
+    def getApiBizName(self):
+
+        return 'updateTmallinventory'
+
+    def getApiMethod(self):
+
+        return 'suning.selfmarket.tmallinventory.update'
+
+
+

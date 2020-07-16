@@ -1,0 +1,6 @@
+from suning.api.defctive.CansalechangeQueryRequest import CansalechangeQueryRequest
+from suning.api.defctive.CansalestatusQueryRequest import CansalestatusQueryRequest
+from suning.api.defctive.IdentifyresultConfirmRequest import IdentifyresultConfirmRequest
+from suning.api.defctive.ImperfectconfigQueryRequest import ImperfectconfigQueryRequest
+from suning.api.defctive.TripinfoQueryRequest import TripinfoQueryRequest
+from suning.api.defctive.TriplistQueryRequest import TriplistQueryRequest

@@ -1,0 +1,5 @@
+from suning.api.cmall.CancelsubtractModifyRequest import CancelsubtractModifyRequest
+from suning.api.cmall.ConfirmsubtractModifyRequest import ConfirmsubtractModifyRequest
+from suning.api.cmall.PointgiveAddRequest import PointgiveAddRequest
+from suning.api.cmall.PointsbalanceQueryRequest import PointsbalanceQueryRequest
+from suning.api.cmall.PointsoccupyAddRequest import PointsoccupyAddRequest
