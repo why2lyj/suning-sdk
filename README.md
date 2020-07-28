@@ -1,3 +1,5 @@
+[![Downloads](https://pepy.tech/badge/suning-sdk)](https://pepy.tech/project/suning-sdk)
+
 苏宁开放平台Python-SDK，beta版
 
 参考了淘宝sdk的设计结构。
