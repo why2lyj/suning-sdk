@@ -1,4 +1,5 @@
 [![Downloads](https://pepy.tech/badge/suning-sdk)](https://pepy.tech/project/suning-sdk)
+[![Page Views Count](https://badges.toozhao.com/badges/01EJD7N935RMW35DSFE6WHYECZ/green.svg)](https://badges.toozhao.com/badges/01EJD7N935RMW35DSFE6WHYECZ/green.svg)
 
 苏宁开放平台Python-SDK，beta版
 
